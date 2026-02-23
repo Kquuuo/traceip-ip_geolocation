@@ -89,7 +89,7 @@ export default function HomePage() {
         borderBottom: '1px solid var(--border)', position: 'sticky', top: 0, zIndex: 100
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '18px' }}>
-          <span>🌐</span> GeoTrace
+          <span>🌐</span> TraceIP
         </div>
         <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
           <span style={{ fontFamily: 'var(--font-mono)', fontSize: '13px', color: 'var(--text2)' }}>@{user?.name}</span>

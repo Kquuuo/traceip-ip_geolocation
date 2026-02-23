@@ -64,7 +64,7 @@ export default function LoginPage() {
             width: '36px', height: '36px', background: 'var(--accent)',
             borderRadius: '8px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '18px'
           }}>🌐</div>
-          <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '20px' }}>GeoTrace</span>
+          <span style={{ fontFamily: 'var(--font-display)', fontWeight: 800, fontSize: '20px' }}>TraceIP</span>
         </div>
 
         <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '26px', marginBottom: '6px' }}>Sign in</h1>
