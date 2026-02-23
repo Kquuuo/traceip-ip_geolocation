@@ -68,9 +68,7 @@ export default function LoginPage() {
         </div>
 
         <h1 style={{ fontFamily: 'var(--font-display)', fontWeight: 700, fontSize: '26px', marginBottom: '6px' }}>Sign in</h1>
-        <p style={{ fontFamily: 'var(--font-mono)', fontSize: '13px', color: 'var(--text3)', marginBottom: '32px' }}>
-          {`// Access the IP intelligence dashboard`}
-        </p>
+        <p style={{ fontFamily: 'var(--font-mono)', fontSize: '13px', color: 'var(--text3)', marginBottom: '32px' }}></p>
 
         {error && (
           <div style={{

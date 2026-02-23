@@ -112,7 +112,7 @@ export default function HomePage() {
                 value={ipInput}
                 onChange={e => { setIpInput(e.target.value); setInputError(''); }}
                 onKeyDown={e => e.key === 'Enter' && doSearch(ipInput)}
-                placeholder="Enter an IP address (e.g. 8.8.8.8)"
+                placeholder="Enter IP address"
                 style={{
                   width: '100%', background: 'var(--surface)', padding: '13px 16px',
                   border: `1px solid ${inputError ? 'var(--error)' : 'var(--border)'}`,
