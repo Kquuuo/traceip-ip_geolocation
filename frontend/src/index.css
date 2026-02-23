@@ -1,0 +1,68 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #0a0e1a;
+  --surface: #0f1629;
+  --surface2: #161d35;
+  --border: #1e2d4a;
+  --border2: #243352;
+  --accent: #00d4ff;
+  --accent-glow: rgba(0, 212, 255, 0.15);
+  --text: #e2e8f0;
+  --text2: #94a3b8;
+  --text3: #475569;
+  --error: #f43f5e;
+  --font-display: 'Syne', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+  --radius: 8px;
+  --radius-lg: 16px;
+  --shadow: 0 4px 24px rgba(0,0,0,0.4);
+  --shadow-glow: 0 0 40px rgba(0, 212, 255, 0.08);
+}
+
+html, body, #root {
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-display);
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--surface); }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 3px; }
+
+.leaflet-container { background: #0a0e1a !important; }
+.leaflet-control-attribution {
+  background: rgba(10,14,26,0.8) !important;
+  color: var(--text3) !important;
+  font-size: 10px !important;
+}
+.leaflet-control-zoom a {
+  background: var(--surface2) !important;
+  color: var(--text) !important;
+  border-color: var(--border) !important;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes pulse-ring {
+  0%   { transform: scale(0.8); opacity: 1; }
+  100% { transform: scale(2); opacity: 0; }
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(-12px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.animate-fade { animation: fadeIn 0.4s ease both; }
+.animate-slide { animation: slideIn 0.3s ease both; }
