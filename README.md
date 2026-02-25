@@ -16,7 +16,7 @@ Git - any version
 3. Create .env file inside the backend folder
     - PORT:8080
     - JWT_SECRET=your_random_secret_string
-    - DATABASE_URL=your_postgresql_connection_string
+    - DATABASE_URL=your_postgresql_connection_string (create account in neon and paste your connection string here)
     - NODE_ENV=development
 4. Run "npm run seed" to create test users
 5. Start the backend server "npm run dev"
