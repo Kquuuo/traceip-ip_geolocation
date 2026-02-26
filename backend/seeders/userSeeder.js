@@ -9,7 +9,7 @@ async function seed() {
     { name: 'Jane Smith', email: 'jane@example.com',  password: 'password123' },
   ];
 
-  console.log('🌱 Seeding users...');
+  console.log('Seeding users...');
 
   for (const user of users) {
     const existing = await query('SELECT id FROM users WHERE email = $1', [user.email]);
@@ -22,7 +22,7 @@ async function seed() {
     console.log(`  ✅ Created: ${user.email} / ${user.password}`);
   }
 
-  console.log('\n✨ Done! Login with admin@example.com / password123');
+  console.log('\nDone! Login with admin@example.com / password123');
   process.exit(0);
 }
 
