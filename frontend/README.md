@@ -1,13 +1,14 @@
-Local Setup
+# Local Setup
 
 Prerequisites: Node.js - v18 or higher npm - vv9 or higher Git - any version
 
-#Clone Repository
+## Clone Repository
 
 Copy URL: https://github.com/Kquuuo/traceip-ip_geolocation.git
 Clone the repository
 Change directory to "traceip-ip_geolocation"
-#Backend Setup
+
+## Backend Setup
 
 Change directory to "backend"
 Run "npm install"
@@ -18,7 +19,8 @@ DATABASE_URL=your_postgresql_connection_string (create account in neon and paste
 NODE_ENV=development
 Run "npm run seed" to create test users
 Start the backend server "npm run dev"
-#Frontend Setup
+
+## Frontend Setup
 
 New Terminal
 Change directory to "frontend"
